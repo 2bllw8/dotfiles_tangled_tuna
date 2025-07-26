@@ -1,0 +1,12 @@
+export XDG_BIN_HOME="$HOME/.local/bin"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_USER_DATA_DIR="$XDG_DATA_HOME"
+export XDG_STATE_HOME="$HOME/.local/state"
+
+export ANDROID_HOME="$XDG_DATA_HOME/android"
+export ELECTRON_OZONE_PLATFORM_HINT="auto"
+export GRADLE_USER_HOME="$XDG_DATA_HOME/gradle"
+export LESSHISTFILE="$XDG_STATE_HOME/less/history"
+export SQLITE_HISTORY="$XDG_CACHE_HOME/sqlite_history"

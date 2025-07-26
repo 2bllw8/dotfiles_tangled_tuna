@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+if [ $(command -v mpd) ]; then
+  mpd_pid=$(pgrep -x mpd)
+  if [ ! "$mpd_pid" ]; then
+    systemctl --user start mpd
+  elif [ "$1" = "r" ]; then
+    systemctl --user restart mpd
+  fi
+  if [ $(command -v ncmpcpp) ]; then
+    ncmpcpp
+  fi
+fi

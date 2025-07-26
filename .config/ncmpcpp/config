@@ -1,0 +1,4 @@
+connected_message_on_startup = no
+lyrics_directory             = ~/.local/share/lyrics
+mpd_music_dir                = ~/Music
+visualizer_data_source       = /tmp/mpd-u0.fifo
